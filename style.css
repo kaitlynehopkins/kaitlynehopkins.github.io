@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo|Old+Standard+TT|Palanquin');
+
+body {
+  font-family: "Palanquin", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  color: #222;
+}
+
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  color: #62b1f6;
+}
+
+a:visited {
+  color: #27408b;
+}
+
+a:hover {
+  color: #1464f4;
+}
+
+a:active {
+  color: #3063a5;
+}
+
+h1 {
+  font-family: "Bilbo", cursive;
+  font-size: 70px;
+  color: #104e8b;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Old Standard TT", serif;
+  color: #104e8b;
+}
+
+address {
+  line-height: 18px;
+}
+
+
+header,
+footer {
+  background-color: #F0F8FF;
+}
+
+header {
+  background-image: url(flower.png);
+  background-position: right -100px top -100px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  font-size: 20px;
+}
+
+footer p:after {
+  content: " • ";
+  padding: 0 10px;
+}
+
+footer p:first-child:after,
+footer p:last-child:after {
+  content: " ";
+  padding: 0;
+}
+
+footer p strong {
+  font-family: "Old Standard TT", serif;
+  color: #104e8b;
+}
+
+
+
+#education article {
+  margin-bottom: 20px;
+}
+
+#education article p,
+#experience article p {
+  margin: 0;
+}
+
+#experience {
+  grid-row: 1 / span 3;
+  grid-column: 2 / 3;
+}
+
+
+
+/*
+  CSS grid scaffolding provided by Erin Brown.
+  http://github.com/umiami-web-design/grid-templates
+*/
