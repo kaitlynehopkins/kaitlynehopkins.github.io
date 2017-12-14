@@ -4,6 +4,7 @@ body {
   font-family: "Palanquin", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   color: #222;
+  background: url("ricepaper.png");
 }
 
 #wrapper {
@@ -47,15 +48,34 @@ address {
 header,
 footer {
   background-color: #F0F8FF;
+  box-shadow: 8px 8px 5px #888888
 }
 
 header {
-  background-image: url(flower.png);
+  background-image: url("flower.png");
   background-position: right -100px top -100px;
   background-repeat: no-repeat;
   padding-left: 20px;
   padding-bottom: 20px;
 }
+
+header h1,
+header h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0 0 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+/* based on resume design */
 
 main {
   display: grid;
@@ -63,6 +83,22 @@ main {
   grid-gap: 20px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+#about main {
+  grid-template-columns: 1fr 331px;
+  margin-top: 50px;
+}
+
+#design main,
+#writing main {
+  grid-template-columns: repeat(3, 306px);
+}
+
+/* design and writing styles */
+
+#irie {
+  grid-column: 1 / -1;
 }
 
 footer {
@@ -90,8 +126,7 @@ footer p strong {
   color: #104e8b;
 }
 
-
-
+/*Resume Specific*/
 #education article {
   margin-bottom: 20px;
 }
@@ -106,7 +141,27 @@ footer p strong {
   grid-column: 2 / 3;
 }
 
+/*Welcome Specific*/
 
+#index #wrapper {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+}
+
+#index header {
+  width: 960px;
+}
+
+/*About Specific*/
+
+#bio p:first-child {
+  margin-top: 0;
+}
+
+/*Design Specific*/
+
+/*Writing Specific*/
 
 /*
   CSS grid scaffolding provided by Erin Brown.
